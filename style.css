@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    width: 100%;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+html {
+    background-color: #fff;
+    color:  #0d0d0d;
+
+}
+
+body {
+    height:100%;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 8vh;
+    right: 0;
+    z-index: 100;
+    background-color: #191970;
+    padding: 20px 8%;
+}
+
+.nav-logo {
+    display: none;
+
+}
+
+.banner {
+    position: relative;
+    color: white;
+    margin-top: -5px;
+}
+
+.module {
+    width: 100%;
+    height: 48vh;
+
+    background: url(resources/barbara/barbara1024_1.jpg);
+    background-size: cover;
+  }
+  .darken {
+    background-image: 
+      linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(resources/barbara/barbara1024_1.jpg);
+}
+
+.checkbtn {
+    position: fixed;
+    left: 90vw;
+    margin-right: 10px;
+    top: 2vh;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+
+    nav ul li a {
+        font-size: 16px;
+    }
+    .nav-logo {
+        display: block;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display:block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        z-index: 1000;
+        background: #718F94;
+        top: 8vh;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    nav ul li {
+        margin: 20px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+        background: none;
+        text-transform: uppercase;
+    }
+    a:hover, a.active {
+        background: none;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 30px;
+}
+
+.navbar a:hover {
+    color: #3C91E6;
+}
+
+.navbar a.active {
+    color: #3C91E6;
+}
+
+.wrapper {
+    width: 100%;
+    height: 1600px;
+    position: fixed;
+    z-index: 0;
+    margin: 0 auto;
+    padding-top: 35px;
+
+}
+
+.img-banner {
+    width: 100%;
+    height: 50vh;
+}
+
+.about-us-contact-container {
+    text-align: center;
+    
+}
+
+.about-us {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.about-us-grid {
+    display: grid;
+    height: 30vh; 
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1em;
+}
+
+.about-us-blurb {
+    padding-top: .75em;
+    padding-right: 2.5em;
+    padding-left: 2.5em;
+}
+
+.about-us-portfolio {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    width: 200px;
+    text-align: center;
+    display: block;
+    margin-right: 10px;
+    margin-bottom: 1px;
+}
+
+.about-us-team {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 2;
+    grid-column-end: 2;
+ 
+    width: 200px;
+    text-align: center;
+    display: block;
+    margin-right: 10px;
+    margin-bottom: 1px;
+}
+
+.about-us-join {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 3;
+    grid-column-end: 3;
+
+    width: 200px;
+    text-align: center;
+    display: block;
+    margin-right: 10px;
+    margin-bottom: 1px;
+}   
+
+.about-us-contact {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 4;
+    grid-column-end: 4;
+
+    width: 200px;
+    text-align: center;
+    display: block;
+    margin-right: 10px;
+    margin-bottom: 1px;
+}   
+
+.about-us-img {
+    border-radius: 50%;
+    border-color: #4B644A;
+    border-style: solid;
+    border-width: 3px;
+    object-fit: cover;
+    width:150px;
+    height:150px;
+}
+
+.about-us-blurb {
+    font-size: 120%;
+}
+
+.about-us-wbe {
+    font-size: 100%;
+    padding-top: 1em;
+}
+
+@media (max-width: 858px) {
+    .about-us-portfolio {
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        width: 200px;
+        text-align: center;
+        display: block;
+        margin-right: 10px;
+        margin-bottom: 1px;
+    }
+    
+    .about-us-team {
+        grid-row-start: 2;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 1;
+     
+        width: 200px;
+        text-align: center;
+        display: block;
+        margin-right: 10px;
+        margin-bottom: 1px;
+    }
+    
+    .about-us-join {
+        grid-row-start: 3;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 1;
+    
+        width: 200px;
+        text-align: center;
+        display: block;
+        margin-right: 10px;
+        margin-bottom: 1px;
+    }   
+    
+    .about-us-contact {
+        grid-row-start: 4;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 1;
+    
+        width: 200px;
+        text-align: center;
+        display: block;
+        margin-right: 10px;
+        margin-bottom: 1px;
+    }   
+}
