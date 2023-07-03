@@ -503,3 +503,67 @@ textarea.form__input {
     padding-top: 75px; 
     padding-left: 25px;
 }
+
+
+/* PORTFOLIO */
+
+.portfolio-row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* background-color: #519872; */
+}
+
+@media screen and (min-width: 859px) {
+    .portfolio-row {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.portfolio-column {
+    width: 20%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    margin-right: 75px;
+    margin-left: 75px;
+    /* border: 2px solid #191970; */
+  }
+  
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 858px) {
+    .portfolio-column {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+}
+
+/* Add some shadows to create a card effect */
+.portfolio-card {
+    /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2); */
+    /* border: solid 2px #519872; */
+}
+
+/* Some left and right padding inside the container */
+.portfolio-container {
+    padding: 0 16px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.portfolio-title {
+    /* background-color: #519872; */
+}
+
+/* Clear floats */
+.portfolio-row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+hr {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
