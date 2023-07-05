@@ -540,10 +540,7 @@ textarea.form__input {
 }
 
 /* Add some shadows to create a card effect */
-.portfolio-card {
-    /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2); */
-    /* border: solid 2px #519872; */
-}
+
 
 /* Some left and right padding inside the container */
 .portfolio-container {
