@@ -564,3 +564,31 @@ hr {
     margin-top: 15px;
     margin-bottom: 15px;
 }
+
+/* JOIN-TEAM */
+
+.join_us_description_container {
+    padding-top: 100px;
+}
+
+.join-us-header {
+    padding-left: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-right: 50%;
+}
+
+.join-us-list {
+    padding-left: 25px;
+    margin-top: 25px;
+}
+
+.benefits-list li {
+    margin-top: 5px;
+    list-style-type: circle;
+    margin-left: 25px;
+}
+
+.join-us-list-title {
+    margin-bottom: 20px;
+}
