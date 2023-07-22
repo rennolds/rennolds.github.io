@@ -185,6 +185,7 @@ nav {
     height: 30vh; 
     align-items: center;
     justify-content: center;
+
     padding-bottom: 1em;
 }
 
@@ -505,7 +506,6 @@ textarea.form__input {
     padding-right: 25px;
 }
 
-
 /* PORTFOLIO */
 
 .portfolio-row {
@@ -570,6 +570,7 @@ hr {
 
 .join_us_description_container {
     padding-top: 100px;
+    padding-right: 25px;
 }
 
 .join-us-header {
@@ -592,4 +593,13 @@ hr {
 
 .join-us-list-title {
     margin-bottom: 20px;
+}
+
+@media (max-width: 952px) {
+    .join_us_description_container {
+        width: 50%;
+        margin: 0 auto;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }
