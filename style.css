@@ -502,6 +502,7 @@ textarea.form__input {
     display: flex;
     padding-top: 75px; 
     padding-left: 25px;
+    padding-right: 25px;
 }
 
 
@@ -585,7 +586,7 @@ hr {
 
 .benefits-list li {
     margin-top: 5px;
-    list-style-type: circle;
+    list-style-type: square;
     margin-left: 25px;
 }
 
