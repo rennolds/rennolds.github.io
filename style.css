@@ -591,15 +591,29 @@ hr {
     margin-left: 25px;
 }
 
+
 .join-us-list-title {
     margin-bottom: 20px;
 }
 
-@media (max-width: 952px) {
+
+.email-to {
+    display: flex;
+    padding-left: 25px;
+    margin-top: 25px;
+}
+
+.email {
+    color: red;
+}
+
+
+
+/* @media (max-width: 952px) {
     .join_us_description_container {
         width: 50%;
         margin: 0 auto;
         padding-left: 0px;
         padding-right: 0px;
     }
-}
+} */
