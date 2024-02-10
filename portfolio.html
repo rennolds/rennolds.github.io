@@ -12,7 +12,6 @@
 </head>
 <body>
     <nav>
-
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
@@ -25,88 +24,33 @@
             <li><a href="./contact.html">Contact</a></li>
             <li><a href="#">Employee Login</a></li>
         </ul>
-    </nav>
+    </nav> 
 
-    <main>
-        <div class="portfolio-container">
-
-            <div class="row-title">Commerical</div>
-            <div class="portfolio-row"> 
-                <div class="portfolio-column">
-                    <div class="portfolio-card">
-                        <img src="resources/barbara/barbara1024_10.jpg" alt="Jane" style="width:100%">
-   
-                    </div>
-                </div>
-
-                <div class="portfolio-column">
-                    <div class="portfolio-card">
-                        <img src="resources/barbara/barbara1024_10.jpg" alt="Jane" style="width:100%">
-
-                    </div>
-                </div>
-
-                <div class="portfolio-column">
-                    <div class="portfolio-card">
-                        <img src="resources/barbara/barbara1024_10.jpg" alt="Jane" style="width:100%">
-    
-                    </div>
-                </div>
-
-            </div>
-            <hr>
-
-            <div class="row-title">Residential</div>
-            <div class="portfolio-row"> 
-                <div class="portfolio-column">
-                    <div class="portfolio-card">
-                        <img src="resources/barbara/barbara1024_10.jpg" alt="Jane" style="width:100%">
-   
-                    </div>
-                </div>
-
-                <div class="portfolio-column">
-                    <div class="portfolio-card">
-                        <img src="resources/barbara/barbara1024_10.jpg" alt="Jane" style="width:100%">
-    
-                    </div>
-                </div>
-
-            </div>
-            <hr>
-
-            <div class="row-title">Commerical</div>
-            <div class="portfolio-row"> 
-                <div class="portfolio-column">
-                    <div class="portfolio-card">
-                        <img src="resources/barbara/barbara1024_10.jpg" alt="Jane" style="width:100%">
-                        
-                    </div>
-                </div>
-
-                <div class="portfolio-column">
-                    <div class="portfolio-card">
-                        <img src="resources/barbara/barbara1024_10.jpg" alt="Jane" style="width:100%">
-
-                    </div>
-                </div>
-
-                <div class="portfolio-column">
-                    <div class="portfolio-card">
-                        <img src="resources/barbara/barbara1024_10.jpg" alt="Jane" style="width:100%">
-    
-                    </div>
-                </div>
-
-            </div>
-
-
+    <div id="portfolioCarousel" class="carousel">
+        <div class="arrow left-arrow" onclick="moveSlide(-1)">
+            <!-- <span class="arrow-symbol arrow-header">Prev Category</span> -->
+            <i class="fas fa-chevron-left"></i>
         </div>
-    </main>
+        <div class="carousel-content">
+            <h2 class="category-header">Category Name</h2>
+            <div class="image-block">
+                <div class="image-container">
+                    <img src="image1.jpg" alt="Project Name">
+                    <h3>Project Name</h3>
+                    <p>Optional Subheading</p>
+                </div>
+            </div>
+        </div>
+            <div class="arrow right-arrow" onclick="moveSlide(1)">
+                <!-- <span class="arrow-header">Next Category</span> -->
+                <i class=" fas fa-chevron-right"></i>
+            </div>
+    </div>    
 
     <footer>
         <div class="footer"> </div>
     </footer>
-    </div>
+    <script src="portfolio-script.js"> </script>
 </body>
+
 </html>
