@@ -524,55 +524,6 @@ textarea.form__input {
 
 /* PORTFOLIO */
 
-.carousel {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80vh; /* Adjust based on your preference */
-}
-
-.carousel-content {
-    text-align: center;
-    flex-grow: 1;
-    display: flex; /* Make the carousel content use flex */
-    justify-content: center; /* Center the items horizontally */
-    flex-wrap: wrap; /* Allow items to wrap as needed */
-}
-
-.image-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    margin: 10px 0;
-}
-
-.image-block {
-    display: flex; /* Changed to flex to control direction */
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-    flex: 1; /* Allow each block to grow */
-    margin: 0 10px; /* Add some space between each block */
-}
-
-.image-block img {
-    width: 100%; /* Make the image fill its container */
-    height: auto;
-    object-fit: cover;
-}
-
-@media (max-width: 768px) {
-    .image-container {
-        flex-wrap: wrap;
-    }
-
-    .image-block {
-        max-width: 100%; /* Full width on smaller screens */
-        margin: 10px auto; /* Adjust margin as needed */
-        flex-basis: calc(50% - 20px); /* Adjust for desired number of items per row */
-    }
-}
-
 .arrow {
     cursor: pointer;
     display: flex;
@@ -599,6 +550,105 @@ textarea.form__input {
     margin-left: 10px;
     padding-right: 10px;
 }
+
+.category-header {
+    margin-top: 100px;
+}
+
+/* Mobile View, Stacked Images */
+
+@media (max-width: 768px) {
+    /* Base styles */
+    .carousel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto; /* Adjust based on your preference */
+    }
+
+    .carousel-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%; /* Ensure the header spans the full width */
+    }
+
+    .carousel-content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; /* Allow wrapping for responsiveness */
+        width: 100%; /* Ensure content uses full width */
+        padding-top: 100px;
+    }
+
+    .image-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        flex-basis: 100%; /* Each block takes full width on mobile */
+        padding-right: 10px;
+    }
+
+    .desktop {
+        display: none;
+    }
+}
+
+/* Desktop View, Side by Side images */
+@media (min-width: 768px) {
+    .carousel {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80vh; /* Adjust based on your preference */
+    }
+    
+    .carousel-content {
+        text-align: center;
+        flex-grow: 1;
+        display: flex; /* Make the carousel content use flex */
+        justify-content: center; /* Center the items horizontally */
+        flex-wrap: wrap; /* Allow items to wrap as needed */
+    }
+    
+    .image-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        max-width: 60vw;
+        margin: 10px 0;
+    }
+    
+    .image-block {
+        display: flex; /* Changed to flex to control direction */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        flex: 1; /* Allow each block to grow */
+        margin: 0 10px; /* Add some space between each block */
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .image-block img {
+        width: 100%; /* Make the image fill its container */
+        height: auto;
+        object-fit: cover;
+    }
+
+    .image-container {
+        flex-wrap: wrap;
+    }
+
+    .image-block {
+        max-width: 100%; /* Full width on smaller screens */
+        margin: 10px auto; /* Adjust margin as needed */
+        flex-basis: calc(50% - 20px); /* Adjust for desired number of items per row */
+    }
+}
+
+
 
 /* JOIN-TEAM */
 

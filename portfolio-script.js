@@ -1,9 +1,43 @@
+// Multi-Family Housing
+// Residential 
+// Hospitality 
+// Commercial 
+// Places of Assembly 
+// Industrial
+
 const categories = [
     { name: "Multi-Family Housing", images: [
         {src: "resources/lerouge.jpg", title: "LeRouge 1", subtitle: "Fun Place 1"}, 
-        {src: "resources/lerouge.jpg", title: "LeRouge 1", subtitle: "Fun Place 1"}] 
-},
-    { name: "Residential", images: [{src: "resources/lerouge.jpg", title: "LeRouge 2", subtitle: "Fun Place 2"}] },
+        {src: "resources/lerouge.jpg", title: "LeRouge 1", subtitle: "Fun Place 1"},
+        {src: "resources/lerouge.jpg", title: "LeRouge 1", subtitle: "Fun Place 1"},
+        ] 
+    },
+    { name: "Residential", images: [
+        {src: "resources/lerouge.jpg", title: "LeRouge 2", subtitle: "Fun Place 2"}] },
+
+    { name: "Hospitality", images: [
+        {src: "resources/lerouge.jpg", title: "LeRouge 2", subtitle: "Fun Place 2"}] },
+
+    { name: "Commercial", images: [
+        {src: "resources/lerouge.jpg", title: "LeRouge 2", subtitle: "Fun Place 2"},
+        {src: "resources/lerouge.jpg", title: "LeRouge 2", subtitle: "Fun Place 2"},
+        ] 
+    },
+    { name: "Places of Assembly", images: [
+        {src: "resources/lerouge.jpg", title: "LeRouge 2", subtitle: "Fun Place 2"},
+        {src: "resources/lerouge.jpg", title: "LeRouge 2", subtitle: "Fun Place 2"},
+        {src: "resources/lerouge.jpg", title: "LeRouge 2", subtitle: "Fun Place 2"},
+        {src: "resources/lerouge.jpg", title: "LeRouge 2", subtitle: "Fun Place 2"},
+        ] 
+    },
+    { name: "Industrial", images: [
+        {src: "resources/lerouge.jpg", title: "LeRouge 2", subtitle: "Fun Place 2"},
+        {src: "resources/lerouge.jpg", title: "LeRouge 2", subtitle: "Fun Place 2"},
+        {src: "resources/lerouge.jpg", title: "LeRouge 2", subtitle: "Fun Place 2"},
+        {src: "resources/lerouge.jpg", title: "LeRouge 2", subtitle: "Fun Place 2"},
+        {src: "resources/lerouge.jpg", title: "LeRouge 2", subtitle: "Fun Place 2"},
+        ] 
+    },
     // Add other categories following the same structure
 ];
 let currentIndex = 0;
