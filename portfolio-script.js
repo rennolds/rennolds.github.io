@@ -28,10 +28,7 @@ const categories = [
         ] 
     },
     { name: "Places of Assembly", images: [
-        {src: "resources/lerouge.jpg", title: "LeRouge 2", subtitle: "Fun Place 2"},
-        {src: "resources/lerouge.jpg", title: "LeRouge 2", subtitle: "Fun Place 2"},
-        {src: "resources/lerouge.jpg", title: "LeRouge 2", subtitle: "Fun Place 2"},
-        {src: "resources/lerouge.jpg", title: "LeRouge 2", subtitle: "Fun Place 2"},
+        {src: "resources/places_of_assembly/st_james.jpg", title: "St. James Church", subtitle: ""},
         ] 
     },
     { name: "Industrial", images: [
