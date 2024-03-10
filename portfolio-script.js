@@ -7,9 +7,7 @@
 
 const categories = [
     { name: "Multi-Family Housing", images: [
-        {src: "resources/lerouge.jpg", title: "LeRouge 1", subtitle: "Fun Place 1"}, 
-        {src: "resources/lerouge.jpg", title: "LeRouge 1", subtitle: "Fun Place 1"},
-        {src: "resources/lerouge.jpg", title: "LeRouge 1", subtitle: "Fun Place 1"},
+        {src: "resources/multifamily/barbara1024_1.jpg", title: "Barbara", subtitle: "Sub Heading?"}, 
         ] 
     },
     { name: "Residential", images: [
