@@ -26,31 +26,35 @@
         </ul>
     </nav> 
 
-    <div class="arrow mobile left-arrow" onclick="moveSlide(-1)">
-        <!-- <span class="arrow-symbol arrow-header">Prev Category</span> -->
-        <i class="fas fa-chevron-left"></i>
-    </div>
+    <div class="outer-container">
+        
+        <div class="header-container">
+        
+            <div class="arrow desktop left-arrow" onclick="moveSlide(-1)">
+                <!-- <span class="arrow-symbol arrow-header">Prev Category</span> -->
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            
+            <h2 id="category-header">Category Name</h2>
 
-    <div id="portfolioCarousel" class="carousel">
-        <div class="arrow desktop left-arrow" onclick="moveSlide(-1)">
-            <!-- <span class="arrow-symbol arrow-header">Prev Category</span> -->
-            <i class="fas fa-chevron-left"></i>
+            <div class="arrow right-arrow" onclick="moveSlide(1)">
+                <!-- <span class="arrow-header">Next Category</span> -->
+                <i class=" fas fa-chevron-right"></i>
+            </div>
         </div>
-        <div class="carousel-content">
-            <h2 class="category-header">Category Name</h2>
-            <div class="image-block">
+
+        <div id="portfolioCarousel" class="carousel">
+
+            <div class="carousel-content">
                 <div class="image-container">
                     <img src="image1.jpg" alt="Project Name">
                     <h3>Project Name</h3>
                     <p>Optional Subheading</p>
                 </div>
             </div>
-        </div>
-            <div class="arrow right-arrow" onclick="moveSlide(1)">
-                <!-- <span class="arrow-header">Next Category</span> -->
-                <i class=" fas fa-chevron-right"></i>
-            </div>
-    </div>    
+
+        </div> 
+    </div>
 
     <footer>
         <div class="footer"> </div>

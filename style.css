@@ -524,6 +524,18 @@ textarea.form__input {
 
 /* PORTFOLIO */
 
+.header-container {
+    display: flex; /* Continues to use Flexbox for layout */
+    justify-content: center; /* Centers the items horizontally */
+    align-items: center; /* Aligns items vertically */
+    gap: 20px; /* Adds space between the elements */
+    padding: 20px; /* Maintains padding for some spacing around the items */
+}
+
+.outer-container {
+    padding-top: 9vh;
+}
+
 .arrow {
     cursor: pointer;
     display: flex;
@@ -551,14 +563,42 @@ textarea.form__input {
     padding-right: 10px;
 }
 
-.category-header {
-    margin-top: 100px;
+#category-header {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#portfolioCarousel {
+    margin-top: -25px;
+    border-radius: 5px;
+    border-style: solid;
+    display: flex; /* Continues to use Flexbox for layout */
+    justify-content: center; /* Centers the items horizontally */
+    align-items: center; /* Aligns items vertically */
+    width: 96vw;
+    margin-left: 2vw;
+}
+
+.carousel-content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.image-block {
+    border-radius: 5px;
+    border-style: solid;
 }
 
 /* Mobile View, Stacked Images */
 
 @media (max-width: 768px) {
     /* Base styles */
+
+    #category-header {
+        margin-left: 10px;
+    }
+    
     .carousel {
         display: flex;
         flex-direction: column;
@@ -570,7 +610,6 @@ textarea.form__input {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 100%; /* Ensure the header spans the full width */
     }
 
     .carousel-content {
@@ -579,15 +618,15 @@ textarea.form__input {
         flex-wrap: wrap; /* Allow wrapping for responsiveness */
         width: 100%; /* Ensure content uses full width */
         padding-top: 100px;
+        height: 100%;
     }
 
     .image-block {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 10px;
         flex-basis: 100%; /* Each block takes full width on mobile */
-        padding-right: 10px;
+        border-style: none;
     }
 
     .desktop {
@@ -601,50 +640,44 @@ textarea.form__input {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 80vh; /* Adjust based on your preference */
+        min-height: 80vh; /* Adjust based on your preference */
+        margin-top: 100px;
+        width: 100%;
+        box-sizing: border-box;
     }
     
     .carousel-content {
-        text-align: center;
-        flex-grow: 1;
-        display: flex; /* Make the carousel content use flex */
-        justify-content: center; /* Center the items horizontally */
-        flex-wrap: wrap; /* Allow items to wrap as needed */
+        display: flex;
+        flex-direction: column;
     }
     
     .image-container {
         display: flex;
-        justify-content: space-around;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        max-width: 60vw;
-        margin: 10px 0;
+        gap: 20px;
+        flex-wrap: wrap;
+        align-items: end;
+        width: 100%;
     }
     
     .image-block {
-        display: flex; /* Changed to flex to control direction */
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center items horizontally */
-        flex: 1; /* Allow each block to grow */
-        margin: 0 10px; /* Add some space between each block */
-        padding-left: 10px;
-        padding-right: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 320px;
+        width: 450px;
+        overflow: hidden;
+
     }
     
     .image-block img {
-        width: 100%; /* Make the image fill its container */
-        height: auto;
-        object-fit: cover;
+        object-fit: contain; /* Ensures the image maintains aspect ratio and fits within the container */
     }
 
     .image-container {
-        flex-wrap: wrap;
-    }
-
-    .image-block {
-        max-width: 100%; /* Full width on smaller screens */
-        margin: 10px auto; /* Adjust margin as needed */
-        flex-basis: calc(50% - 20px); /* Adjust for desired number of items per row */
+        /* flex-wrap: wrap; */
+        display: flex;
+        justify-content: center;
     }
 }
 

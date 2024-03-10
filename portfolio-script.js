@@ -16,7 +16,11 @@ const categories = [
         {src: "resources/lerouge.jpg", title: "LeRouge 2", subtitle: "Fun Place 2"}] },
 
     { name: "Hospitality", images: [
-        {src: "resources/lerouge.jpg", title: "LeRouge 2", subtitle: "Fun Place 2"}] },
+        {src: "resources/hospitality/lerouge.jpg", title: "LeRouge", subtitle: ""},
+        {src: "resources/hospitality/brine.jpg", title: "Brine Oyster Bar", subtitle: ""},
+        {src: "resources/hospitality/red_crown.jpg", title: "Red Crown", subtitle: ""},
+        {src: "resources/hospitality/corrianders.jpg", title: "Corrianders Book Store", subtitle: ""},
+    ] },
 
     { name: "Commercial", images: [
         {src: "resources/lerouge.jpg", title: "LeRouge 2", subtitle: "Fun Place 2"},
@@ -44,7 +48,7 @@ let currentIndex = 0;
 
 function updateCarousel() {
     const carousel = document.getElementById('portfolioCarousel');
-    const categoryHeader = carousel.querySelector('.category-header');
+    const categoryHeader = document.getElementById('category-header');
     const leftArrowHeader = carousel.querySelector('.left-arrow .arrow-header');
     const rightArrowHeader = carousel.querySelector('.right-arrow .arrow-header');
     const imageContainer = carousel.querySelector('.carousel-content .image-container');
